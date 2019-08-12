@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "39800b2c-cad3-4b36-8752-27a8d3e36cc9",
+		"name": "Fenix International",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "View Requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9011/payment/view-payment-requests/",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"payment",
+						"view-payment-requests",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make a new Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"amount\" : 10,\n\t\"user_requested_for\" : 1\n}"
+				},
+				"url": {
+					"raw": "localhost:9011/payment/new-request/",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"payment",
+						"new-request",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
