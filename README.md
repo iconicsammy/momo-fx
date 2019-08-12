@@ -32,11 +32,11 @@ Background process is done with Celery, hence the worker and the beat should be 
 
 First, launch the worker by typing the following in the command prompt:
 
-         celery -A agrigo worker -E --concurrency=5 -l debug -P eventlet
+         celery -A app worker -E --concurrency=5 -l debug -P eventlet
          
 Then, launch the beat that does periodic task in a separate command prompt:
 
-         celery -A agrigo beat -l debug
+         celery -A app beat -l debug
          
 # Postman
 
