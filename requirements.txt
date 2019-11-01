@@ -21,7 +21,7 @@ django-oauth-toolkit==1.2.0
 django-oauth2-provider==0.2.6.1
 django-rest-coreapi-schema==0.1.2
 django-timezone-field==3.0
-djangorestframework==3.7.7
+djangorestframework==3.9.1
 dnspython==1.16.0
 eventlet==0.25.0
 greenlet==0.4.15
